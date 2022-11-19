@@ -2,15 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import List from './component/List/List';
-import Todo from './component/Todo/Todo';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <List />
-    <Todo />
+    <App />
   </React.StrictMode>
 );
 

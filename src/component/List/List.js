@@ -1,15 +1,8 @@
 import React, { useState } from 'react';
 
-function App() {
+function List(props) {
 
-    const [list, setList] = useState;
-    
-  
-    const addTodo = (todo) => {
-      const newTodo = {id: Math.random(), todo: todo};
-      // add to the list
-      setList([...list, newTodo]);
-    }
+  const list = props.list;
   
     return (
       <div>
@@ -26,4 +19,4 @@ function App() {
     );
   }
   
-  export default App
+  export default List;
