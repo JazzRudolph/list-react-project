@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import List from './component/List/List';
 import Todo from './component/Todo/Todo';
+import Date from "./component/Date/Date";
+
 
 function App() {
   const [list, setList] = useState([{
@@ -24,23 +26,15 @@ function App() {
     <div className="App">
       <header className="App-header">
 
-        <p>
-          
-          Hey Jazzy what are you doing?
+        <h1>
+          Todays Errands
+        </h1>
+        <Date />
 
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
       <main>
-        <List list={list} />
         <Todo addTodoCallback={addTodo} />        
+        <List list={list} />
       </main>
     </div>
   );

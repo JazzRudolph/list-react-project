@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-function Todo(props) {
+
+export default function Todo(props) {
 
     const [input, setInput] = useState('');
   
@@ -14,7 +15,6 @@ function Todo(props) {
   
     return (
       <div>
-        <h1> List </h1>
         <input type="text" value={input} onChange={(e) => setInput(e.target.value)}></input>
         <button onClick={() => addTodo(input)}>Add</button>
         <ul>
@@ -30,4 +30,3 @@ function Todo(props) {
     );
   }
   
-  export default Todo;

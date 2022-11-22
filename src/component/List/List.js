@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function List(props) {
+export default function List(props) {
 
   const list = props.list;
   
@@ -19,4 +19,3 @@ function List(props) {
     );
   }
   
-  export default List;
