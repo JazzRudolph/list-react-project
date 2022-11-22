@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import List from './component/List/List';
 import Todo from './component/Todo/Todo';
-import Date from "./component/Date/Date";
+import Date from './component/Date/Date';
+import Time from './component/Time/Time';
 
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
         <h1>
           Todays Errands
         </h1>
-        <Date />
+        <p><Date /> & <Time /></p>
 
       </header>
       <main>

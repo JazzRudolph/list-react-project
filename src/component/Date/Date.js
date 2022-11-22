@@ -5,8 +5,8 @@ export default function App() {
   const date = `${today.getMonth()+1}/${today.getDate()}/${today.getFullYear()}`;
 
   return (
-    <div className="Todo">
-      <p>{date} & Time</p>
+    <div className="">
+      <p>{date}</p>
     </div>
   );
 }

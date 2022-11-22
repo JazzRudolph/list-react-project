@@ -17,15 +17,6 @@ export default function Todo(props) {
       <div>
         <input type="text" value={input} onChange={(e) => setInput(e.target.value)}></input>
         <button onClick={() => addTodo(input)}>Add</button>
-        <ul>
-          <li>test</li>
-          {/*addTodo.map((todo) =>(
-            <li key={todo.id}>
-              {todo.todo}
-              <button>&times;</button>
-            </li>
-          ))*/}
-        </ul>
       </div>
     );
   }
