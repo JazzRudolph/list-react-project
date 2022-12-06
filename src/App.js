@@ -30,7 +30,7 @@ function App() {
         <h1>
           Todays Errands
         </h1>
-        <p><Date /> & <Time /></p>
+        <p><em><Date /> <Time /></em></p>
 
       </header>
       <main>

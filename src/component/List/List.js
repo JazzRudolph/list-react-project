@@ -11,7 +11,8 @@ export default function List(props) {
           {list.map((todo) =>(
             <li key={todo.id}>
               {todo.todo}
-              <button>&times;</button>
+              <button>Delete</button>
+              <button>Priority</button>
             </li>
           ))}
         </ul>

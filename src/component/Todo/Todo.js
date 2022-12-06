@@ -18,6 +18,8 @@ export default function Todo(props) {
         <input type="text" value={input} onChange={(e) => setInput(e.target.value)}></input>
         <button onClick={() => addTodo(input)}>Add</button>
       </div>
+
+      
     );
   }
   

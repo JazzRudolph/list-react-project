@@ -17,7 +17,7 @@ export default function Time() {
 
     return(
         <div className="Time">
-            <p>{time}</p>
+            {time}
         </div>
     )
 }
