@@ -7,7 +7,7 @@ import Time from './component/Time/Time';
 
 
 function App() {
-  const [list, setList] = useState([{
+  const [listitem, setListitem] = useState([{
     id: Math.random(),
     todo: 'first item'
   }]);
@@ -19,7 +19,7 @@ function App() {
       todo: todo
     };
     // add to the list
-    setList([...list, newTodo]);
+    setListitem([...listitem, newTodo]);
   }
 
 
@@ -35,7 +35,7 @@ function App() {
       </header>
       <main>
         <Todo addTodoCallback={addTodo} />        
-        <List list={list} />
+        <List list={listitem} />
       </main>
     </div>
   );
